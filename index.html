@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraCraft Fragrances | Luxury Perfume Factory</title>
+    <!-- Optional inline styling so it looks great immediately -->
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a059; /* Luxury Gold */
+            --bg-light: #f9f8f6;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 7rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #b08d46;
+            color: #ffffff;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            flex: 1;
+            min-width: 280px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--accent-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="logo">AuraCraft</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Order / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Artisanal Scents, Crafted to Perfection</h1>
+        <p>Welcome to AuraCraft Fragrance Factory. We blend rare botanical extracts and modern chemistry to create signature perfumes for global brands.</p>
+        <a href="products.html" class="btn">Explore Our Catalog</a>
+    </section>
+
+    <!-- Features / Pillars -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Pure Ingredients</h3>
+            <p>Sourced globally from sustainable botanical farms, ensuring absolute purity and long-lasting notes in every batch.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Master Craftsmanship</h3>
+            <p>Combining time-honored French perfumery techniques with advanced state-of-the-art laboratory blending.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Custom Formulation</h3>
+            <p>We work directly with distributors and retail brands to develop bespoke white-label fragrance lines.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AuraCraft Fragrance Factory (SIWES Project). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

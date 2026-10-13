@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order & Contact | AuraCraft Fragrances</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a059; /* Luxury Gold */
+            --bg-light: #f9f8f6;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--accent-color);
+        }
+
+        /* Page Banner */
+        .page-banner {
+            background-color: #2a2a2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .page-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-banner p {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* Form Container */
+        .container {
+            max-width: 700px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .form-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--accent-color);
+        }
+
+        .form-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 0.9rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="logo">AuraCraft</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html" class="active">Order / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Get in Touch & Order</h1>
+        <p>Place Your Wholesale Requests or Send Us an Inquiry</p>
+    </div>
+
+    <!-- Form Container -->
+    <main class="container">
+        <div class="form-card">
+            <h2>Wholesale Order & Inquiry Form</h2>
+            <form action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name / Company Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your name or business name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="perfume">Select Fragrance / Product:</label>
+                    <select id="perfume" name="perfume">
+                        <option value="midnight-rose">Midnight Rose (EDP - $120)</option>
+                        <option value="golden-amber">Golden Amber (Luxury Edition - $150)</option>
+                        <option value="ocean-breeze">Ocean Breeze (Daily Wear - $95)</option>
+                        <option value="custom-blend">Custom Factory White-Label Blend</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity (Bottles):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="1000" value="10">
+                </div>
+
+                <div class="form-group">
+                    <label for="instructions">Additional Details / Special Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="4" placeholder="Mention packaging preferences, delivery timelines, or custom formulation notes..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Order Request</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AuraCraft Fragrance Factory (SIWES Project). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

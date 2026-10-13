@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | AuraCraft Fragrances</title>
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --accent-color: #c5a059; /* Luxury Gold */
+            --bg-light: #f9f8f6;
+            --text-dark: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 1.2rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--accent-color);
+        }
+
+        /* Page Banner */
+        .page-banner {
+            background-color: #2a2a2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .page-banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-banner p {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* Products Catalog Container */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 3px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-content h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-notes {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-notes strong {
+            color: var(--primary-color);
+        }
+
+        .btn-order {
+            display: block;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 0.7rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+            margin: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .btn-order:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header>
+        <div class="logo">AuraCraft</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="contact.html">Order / Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <h1>Signature Fragrance Catalog</h1>
+        <p>Explore Our Factory-Direct Wholesale and Retail Collections</p>
+    </div>
+
+    <!-- Main Products Grid -->
+    <main class="container">
+        <div class="products-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80" alt="Midnight Rose" class="product-img">
+                <div class="product-content">
+                    <h3>Midnight Rose (EDP)</h3>
+                    <div class="product-price">$120.00 / 100ml</div>
+                    <p class="product-notes"><strong>Scent Notes:</strong><br>• Top: Blackcurrant, Bergamot<br>• Heart: Damask Rose, Jasmine<br>• Base: White Musk, Vanilla</p>
+                </div>
+                <a href="contact.html" class="btn-order">Inquire / Order</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80" alt="Golden Amber" class="product-img">
+                <div class="product-content">
+                    <h3>Golden Amber (Luxury Edition)</h3>
+                    <div class="product-price">$150.00 / 100ml</div>
+                    <p class="product-notes"><strong>Scent Notes:</strong><br>• Top: Saffron, Cinnamon<br>• Heart: OUD Wood, Patchouli<br>• Base: Amber, Smoked Cedar</p>
+                </div>
+                <a href="contact.html" class="btn-order">Inquire / Order</a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80" alt="Ocean Breeze" class="product-img">
+                <div class="product-content">
+                    <h3>Ocean Breeze (Daily Wear)</h3>
+                    <div class="product-price">$95.00 / 100ml</div>
+                    <p class="product-notes"><strong>Scent Notes:</strong><br>• Top: Sea Salt, Grapefruit<br>• Heart: Sage, Lavender<br>• Base: Driftwood, Oakmoss</p>
+                </div>
+                <a href="contact.html" class="btn-order">Inquire / Order</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AuraCraft Fragrance Factory (SIWES Project). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
